@@ -36,6 +36,41 @@ class BootstrapHelper {
         $this->theme_hash = $this->config_ent('stylesheet_hash');
     }
     
+    
+    /*
+     * Wikka Method Wrappers
+     */
+    function config_ent($config_key) {
+        return $this->wikka->htmlspecialchars_ent(
+            $this->wikka->GetConfigValue($config_key));
+    }
+    
+    function link($href, $text, $title='', $class='') {
+        $handler = '';
+        $track = true;
+        $escapeText = true;
+        $assumePageExists = true;
+
+        return $this->wikka->Link($href, $handler, $text, $track,
+            $escapeText, $title, $class, $assumePageExists);
+    }
+    
+    function echo_additional_headers() {
+        $additional_headers_exist = isset($this->wikka->additional_headers) &&
+            is_array($this->wikka->additional_headers) &&
+            count($this->wikka->additional_headers);
+        
+        if ( $additional_headers_exist ) {
+            foreach ($this->wikka->additional_headers as $header) {
+                printf("%s\n", $header);
+            }
+        }
+        else {
+            echo '<!-- no additional headers -->';
+        }
+    }
+    
+    
     /*
      * Setters
      */
@@ -166,26 +201,10 @@ class BootstrapHelper {
         return sprintf($html_f, $homepage_link, $backlinks_link);
     }
     
-    function echo_additional_headers() {
-        $additional_headers_exist = isset($this->wikka->additional_headers) &&
-            is_array($this->wikka->additional_headers) &&
-            count($this->wikka->additional_headers);
-        
-        if ( $additional_headers_exist ) {
-            foreach ($this->wikka->additional_headers as $header) {
-                printf("%s\n", $header);
-            }
-        }
-        else {
-            echo '<!-- no additional headers -->';
-        }
-    }
     
-    function config_ent($config_key) {
-        return $this->wikka->htmlspecialchars_ent(
-            $this->wikka->GetConfigValue($config_key));
-    }
-    
+    /*
+     * Menu Methods
+     */
     function menu($menu) {
         global $BootstrapMenus;
         $menu_array = $BootstrapMenus[$menu];
@@ -267,8 +286,9 @@ class BootstrapHelper {
         return sprintf($li_f, $class, $this->wikka->Format($wikka_item));
     }
     
+    
     /*
-     * Pseudo-Actions
+     * Pseudo-Actions (used by menus -- see menu_li)
      */
     function username_pseudoaction($wikka_item, $tag) {
         return str_replace($tag, $this->user_name, $wikka_item);
@@ -279,10 +299,10 @@ class BootstrapHelper {
         return '""<a class="logout-click" href="#">Logout</a>""';
     }
     
-    function link($href, $label, $what_is_this='') {
-        return $this->wikka->Link($href, $what_is_this, $label);
-    }
     
+    /*
+     * Debug Methods
+     */
     function output_sql_debugging() {
         $html_f = <<<HTML5
     <div id="sql_debug" class="smallprint">

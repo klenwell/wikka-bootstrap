@@ -2,18 +2,19 @@
   # init bootstrap helper
   require_once($this->GetThemePath('/') . '/bootstrap_helper.php');
   $footer_helper = new BootstrapHelper($this);  
-?>  
-        <!-- BEGIN PAGE CONTROLS -->
-        <div id="page-controls">
-          <div id="footer-navbar" class="navbar">
-            <div class="navbar-inner-disabled">
-              <div class="container">
+?>
+
+      <!-- BEGIN PAGE CONTROLS -->
+      <div id="page-controls">
+        <div id="footer-navbar" class="navbar">
+          <div class="navbar-inner-disabled">
+            <div class="container">
               <?php echo $footer_helper->menu('options_menu');	?>
-              </div>
             </div>
           </div>
         </div>
-        <!-- END PAGE CONTROLS -->
+      </div>
+      <!-- END PAGE CONTROLS -->
     
     <!-- END CONTAINER -->
     </div>
@@ -35,7 +36,7 @@
           ?>
         </p>
         <ul class="footer-links">
-           <li>
+          <li>
             <?php echo $footer_helper->link(
                 'http://validator.w3.org/check/referer',
                 T_("Valid XHTML")); ?>

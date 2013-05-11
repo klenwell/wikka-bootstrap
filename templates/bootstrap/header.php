@@ -46,18 +46,19 @@
   </head>
   
   <body>
+	
     <!-- BEGIN PAGE WRAPPER -->
     <div id="page" class="container">
-    <?php
-      # display system messages
-      if ( isset($bootstrap->message) && strlen($bootstrap->message)>0 ) {
-        printf('<div class="alert alert-success">%s</div>',
-          $bootstrap->message);
-      }
-    ?>
+	  <?php
+	    # display system messages
+	    if ( isset($bootstrap->message) && strlen($bootstrap->message)>0 ) {
+		  printf('<div class="alert alert-success">%s</div>',
+		    $bootstrap->message);
+	    }
+	  ?>
     
-    <!-- BEGIN MASTHEAD -->
-    <div class="masthead">
+      <!-- BEGIN MASTHEAD -->
+      <div class="masthead">
         <h2 class="muted">
           <?php echo $bootstrap->masthead_html; ?>
         </h2>
@@ -69,6 +70,10 @@
               <?php echo $bootstrap->search_form; ?>
             </div>
           </div>
-        </div><!-- /.navbar -->  
-    </div>
-    <!-- END MASTHEAD -->
+        </div>
+      </div>
+      <!-- END MASTHEAD -->
+	  
+	<?php
+      # TO BE CONTINUED IN footer.php
+	?>
