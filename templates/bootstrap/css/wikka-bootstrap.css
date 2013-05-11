@@ -18,7 +18,6 @@ textarea {
   width: 98%;
 }
 
-
 /*
  * Container
  */
@@ -33,18 +32,6 @@ div#content {
   clear: both;
   text-align: left;
 }
-form#form_bootstrap-logout {
-  margin:0;
-  padding:0;
-}
-
-
-/*
- * Header
- */
-input#searchbox {
-  width: 140px;
-}
 
 /*
  * Alerts
@@ -53,6 +40,12 @@ input#searchbox {
   display: block;
 }
 
+/*
+ * Header
+ */
+input#searchbox {
+  width: 140px;
+}
 
 /*
  * Footer
@@ -78,21 +71,26 @@ input#searchbox {
   padding: 0 2px;
 }
 
+form#form_bootstrap-logout {
+  margin:0;
+  padding:0;
+}
+
 /*
  * Page Controls Navbar
  */
 #page-controls {
-    font-size:12px;
+  font-size:12px;
 }
 #page-controls .well-small {
-    padding:0px
+  padding:0px
 }
 #page-controls .nav>li {
-    padding: 10px 15px 10px;
+  padding: 10px 15px 10px;
 }
 #page-controls .nav>li>a {
-    display:inline;
-    padding:0;
+  display:inline;
+  padding:0;
 }
 
 /*
@@ -100,84 +98,81 @@ input#searchbox {
  */
 /* whole comment block */
 #comments {
-	margin-top: 20px;	
-	padding: 10px;
-	color: #333;	
-	background-color: #e0e8ff;
-    border: 1px solid #e0e8ff;
+  margin-top: 20px;	
+  padding: 10px;
+  color: #333;	
+  background-color: #e0e8ff;
+  border: 1px solid #e0e8ff;
 }
 
 #comments form {
-    margin:0;
+  margin:0;
 }
 
 #comments a {}
 
 #commentsheader {
-	clear: both;
-	border-top: 1px solid #CCC;
+  clear: both;
+  border-top: 1px solid #CCC;
 }
 
 /* wrapper for the comment lists */
-.commentscontainer {
-}
+.commentscontainer {}
 
 /* single comment blocks */
 /* set contents of next 2 selectors the same if not alternation desired */
 .comment-layout-1 {
-	background-color: #f0f0f0;
-	padding: 5px;
-	margin: 5px;
-	border: 1px solid #ABC;
+  background-color: #f0f0f0;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ABC;
 }
 
 .comment-layout-2 {
-	background-color: #fff;
-	padding: 5px;
-	margin: 5px;
-    border: 1px solid #ABC;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ABC;
 }
 
 .commentbody {
-    padding: 0.5em 0;
+  padding: 0.5em 0;
 }
 
-.commentaction {
-}
+.commentaction {}
 
-.commentform {
-}
+.commentform {}
 
 #commentform textarea {
-	height: 80px;
+  height: 80px;
 }
 
 textarea#commentbox {
-	height: 80px;
+  height: 80px;
 }
 
 .commentinfo {
-	color: #999999;
-	font-size: 80%;
-	font-family: "Lucida Console", Monaco, monospace;
+  color: #999999;
+  font-size: 80%;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 .commentdeleted {
-	color: #AAAAAA;
+  color: #AAAAAA;
 }
 
 .commentauthor {
-	font-size: 1.2em;
-	line-height: 20px;
-	color: #000000;
-	margin: 5px 5px 0 0;
+  font-size: 1.2em;
+  line-height: 20px;
+  color: #000000;
+  margin: 5px 5px 0 0;
 }
 
 .commentparent {
-	font-size: 1em;
-	line-height: 20px;
-	color: #555555;
-	margin: 5px 5px 5px 5px;
+  font-size: 1em;
+  line-height: 20px;
+  color: #555555;
+  margin: 5px 5px 5px 5px;
 }
 
 /*
