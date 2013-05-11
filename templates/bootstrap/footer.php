@@ -87,7 +87,9 @@
         });
         
         // increase default editor min height
-        varWikkaEdit.EDITOR_MIN_HEIGHT = 220;
+        if ( typeof varWikkaEdit !== 'undefined' ) {
+            varWikkaEdit.EDITOR_MIN_HEIGHT = 220;
+        }
       });
     </script>
     <!-- END ONLOAD STYLE ADJUSTMENTS -->
