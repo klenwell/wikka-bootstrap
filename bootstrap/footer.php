@@ -81,6 +81,10 @@
         $('.error').addClass('alert').addClass('alert-error');
         $('.usersettings_info').addClass('alert').addClass('alert-info');
         
+        // floats
+        $('.floatl').addClass('pull-left').addClass('well');
+        $('.floatr').addClass('pull-right').addClass('well');
+        
         // logout links
         $('.logout-click').click(function() {
           $("form#form_bootstrap-logout").submit();

@@ -41,6 +41,16 @@ em.success, em.error, em.usersettings_info {
 }
 
 /*
+ * Floats
+ */
+.floatl {
+  margin-right: 12px;
+}
+.floatr {
+  margin-left: 12px;
+}
+
+/*
  * Header
  */
 input#searchbox {
