@@ -56,7 +56,7 @@
     <?php if ( $this->GetUser() ): ?>
       <?php echo $this->FormOpen('', 'UserSettings', 'post',
           'bootstrap-logout'); ?>
-        <input type="hidden"  id="logout" name="logout" value="Logout" />
+        <input type="hidden" name="logout" value="Logout" />
         <input type="hidden" name="logout-via" value="bootstrap" />
       <?php echo $this->FormClose(); ?>
     <?php endif; ?>
@@ -78,6 +78,7 @@
         
         // alerts
         $('.success').addClass('alert').addClass('alert-success');
+        $('.error').addClass('alert').addClass('alert-error');
         $('.usersettings_info').addClass('alert').addClass('alert-info');
         
         // logout links
