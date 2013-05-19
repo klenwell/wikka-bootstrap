@@ -9,3 +9,4 @@ Bootstrap template for WikkaWiki
 
 ### Demo
 - Visit http://klenwell.com/is/HomePage
+- For a full sample of formatting styles, see http://klenwell.com/is/FormattingRules
