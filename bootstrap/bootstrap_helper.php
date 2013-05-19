@@ -307,7 +307,7 @@ class BootstrapHelper {
         $html_f = <<<HTML5
     <div id="sql_debug" class="smallprint">
         <h4>Query Log</h4>
-        <table class="table table-bordered">
+        <table>
           <thead>
             <tr><th>query</th><th>time</th></tr>
           </thead>
