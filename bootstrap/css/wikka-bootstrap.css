@@ -17,9 +17,6 @@ textarea {
   margin-right: 0;
   width: 98%;
 }
-br {
-  clear:both;
-}
 
 /*
  * Container
@@ -47,9 +44,11 @@ em.success, em.error, em.usersettings_info {
  * Floats
  */
 .floatl {
+  clear:left;
   margin-right: 12px;
 }
 .floatr {
+  clear:right;
   margin-left: 12px;
 }
 .clear {
