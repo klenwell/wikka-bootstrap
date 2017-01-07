@@ -10,36 +10,36 @@ $BootstrapMenus = array(
 				'SysInfo',
 				'WikkaConfig'
 			)),
-			'[[CategoryCategory Categories]]',
+			'[[CategoryCategory|Categories]]',
 			'PageIndex',
 			'RecentChanges',
 			'RecentlyCommented',
 			array('Profile' => array(
-				'[[<<username>> My User Page]]',
-				'[[UserSettings Settings]]',
+				'[[<<username>>|My User Page]]',
+				'[[UserSettings|Settings]]',
 				'<<logout>>',
 			)),
 		),
 		'user' => array(
-			'[[CategoryCategory Categories]]',
+			'[[CategoryCategory|Categories]]',
 			'PageIndex',
 			'RecentChanges',
 			'RecentlyCommented',
 			array('Profile' => array(
-				'[[<<username>> My User Page]]',
-				'[[UserSettings Settings]]',
+				'[[<<username>>|My User Page]]',
+				'[[UserSettings|Settings]]',
 				'<<logout>>',
 			)),
 		),
 		'default' => array(
-			'[[CategoryCategory Categories]]',
+			'[[CategoryCategory|Categories]]',
 			'PageIndex',
 			'RecentChanges',
 			'RecentlyCommented',
-			'[[UserSettings Login/Register]]',
+			'[[UserSettings|Login/Register]]',
 		)
 	),
-	
+
 	'options_menu' => array(
 		'admin' => array(
 			'{{editlink}}',
